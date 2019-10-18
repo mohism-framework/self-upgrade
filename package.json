@@ -1,0 +1,39 @@
+{
+  "name": "@mohism/self-upgrade",
+  "version": "1.0.0",
+  "description": "self upgrade command",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "npx eslint ./src/**/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohism-framework/self-upgrade.git"
+  },
+  "keywords": [
+    "mohism",
+    "upgrade"
+  ],
+  "author": "lanhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohism-framework/self-upgrade/issues"
+  },
+  "homepage": "https://github.com/mohism-framework/self-upgrade#readme",
+  "dependencies": {
+    "@mohism/cli-wrapper": "^1.1.14",
+    "colors": "^1.4.0",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
