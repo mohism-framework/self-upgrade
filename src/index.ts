@@ -60,7 +60,7 @@ class SelfUpgrade extends ActionBase {
           break;
       }
     } else {
-      this.info(`Current version ${currentVersion} does not require to upgrade`);
+      this.info(`Current version ${currentVersion} does not require to upgrade`.white);
     }
   }
 }
