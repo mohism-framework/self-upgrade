@@ -1,6 +1,6 @@
 {
   "name": "@mohism/self-upgrade",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "self upgrade command",
   "main": "dist/index.js",
   "scripts": {
