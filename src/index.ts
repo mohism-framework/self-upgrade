@@ -1,11 +1,11 @@
 import ActionBase from '@mohism/cli-wrapper/dist/libs/action.class';
-import { ArgvOption, Dict } from '@mohism/cli-wrapper/dist/libs/utils/type';
+import { ArgvOption } from '@mohism/cli-wrapper/dist/libs/utils/type';
+import { Dict } from '@mohism/utils';
 import { blue, green, red } from 'colors';
 import { existsSync } from 'fs';
 import shelljs from 'shelljs';
 
 import { bitsify, getLatestVersion, versionCompare } from './func';
-
 
 class SelfUpgrade extends ActionBase {
   options(): Dict<ArgvOption> {
@@ -46,7 +46,7 @@ class SelfUpgrade extends ActionBase {
         case 2:
           this.info(`Ready to upgrade: ${blue(currentVersion)} --> ${green(latestVersion)}`);
           this.info('🐌   🐌 🐌 Wait ... ');
-          
+
           const spawn = shelljs.exec(`npm i -g ${name}`, {
             silent: true,
           });
@@ -55,7 +55,7 @@ class SelfUpgrade extends ActionBase {
             this.warn('You may need to add ‘sudo’'.blue);
             process.exit(0);
           }
-          
+
           this.info(`Successful upgrade: ${name.yellow}@${latestVersion.green}`.white);
           break;
       }

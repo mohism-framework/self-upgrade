@@ -1,6 +1,6 @@
 {
   "name": "@mohism/self-upgrade",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "self upgrade command",
   "main": "dist/index.js",
   "scripts": {
@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/mohism-framework/self-upgrade#readme",
   "dependencies": {
-    "@mohism/cli-wrapper": "^1.2.17",
+    "@mohism/cli-wrapper": "^1.2.23",
+    "@mohism/utils": "^1.0.1",
     "colors": "^1.4.0",
     "shelljs": "^0.8.3"
   },
