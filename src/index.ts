@@ -1,5 +1,4 @@
-import ActionBase from '@mohism/cli-wrapper/dist/libs/action.class';
-import { ArgvOption } from '@mohism/cli-wrapper/dist/libs/utils/type';
+import { ActionBase,ArgvOption } from '@mohism/sloty';
 import { Dict } from '@mohism/utils';
 import { blue, green, red } from 'colors';
 import { existsSync } from 'fs';
@@ -16,7 +15,7 @@ class SelfUpgrade extends ActionBase {
     return `Upgrade ${this.instance.name}`;
   }
 
-  async run(argv: Dict<any>): Promise<any> {
+  async run(): Promise<any> {
     let currentVersion = '9999.9999.9999';
     let latestVersion = '0.0.0';
     let name: string = '';
