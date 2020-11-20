@@ -1,6 +1,6 @@
 {
   "name": "@mohism/self-upgrade",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "self upgrade command",
   "main": "dist/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mohism-framework/self-upgrade#readme",
   "dependencies": {
-    "@mohism/sloty": "^1.0.6",
+    "@mohism/sloty": "^1.3.0",
     "@mohism/utils": "^1.1.3",
     "colors": "^1.4.0",
     "shelljs": "^0.8.3"
