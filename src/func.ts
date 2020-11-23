@@ -19,7 +19,7 @@ export const versionCompare = (a: versionBits, b: versionBits): [number, boolean
     if (a[i] > b[i]) {
       return [i, true];
     } else {
-      throw new Error(`Currentttt Version (${a.join('.')}) is greater than Latest Version (${b.join('.')})`);
+      throw new Error(`Currentttt Version (${b.join('.')}) is greater than Latest Version (${a.join('.')})`);
     }
   }
   return [0, false];
