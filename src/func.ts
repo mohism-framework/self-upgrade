@@ -13,8 +13,13 @@ export const bitsify = (v: string): versionBits => {
 
 export const versionCompare = (a: versionBits, b: versionBits): [number, boolean] => {
   for (let i = 0; i < 3; i++) {
+    if (a[i] === b[i]) {
+      continue;
+    }
     if (a[i] > b[i]) {
       return [i, true];
+    } else {
+      throw new Error(`Currentttt Version (${b.join('.')}) is greater than Latest Version (${a.join('.')})`);
     }
   }
   return [0, false];

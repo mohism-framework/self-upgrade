@@ -15,7 +15,7 @@ class SelfUpgrade extends ActionBase {
     return `Upgrade ${this.instance.name}`;
   }
 
-  async run(): Promise<any> {
+  async run(): Promise<void> {
     let currentVersion = '9999.9999.9999';
     let latestVersion = '0.0.0';
     let name: string = '';
